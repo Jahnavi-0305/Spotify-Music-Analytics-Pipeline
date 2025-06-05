@@ -3,41 +3,39 @@ CREATE DATABASE spotify_project;
 
 USE DATABASE spotify_project;
 
--- Table: tracks
-CREATE OR REPLACE TABLE tracks (
-    genre STRING,
-    artists STRING,
-    acousticness FLOAT,
-    danceability FLOAT,
-    duration_ms INT,
-    energy FLOAT,
-    instrumentalness FLOAT,
-    liveness FLOAT,
-    loudness FLOAT,
-    speechiness FLOAT,
-    tempo FLOAT,
-    valence FLOAT,
-    popularity FLOAT,
-    key INT,
-    mode INT,
-    track_count INT
+CREATE OR REPLACE TABLE ARTIST_TABLE (
+    MODE_COUNT INT,
+    TRACK_COUNT INT,
+    ACOUSTICNESS FLOAT,
+    ARTISTS STRING,
+    DANCEABILITY FLOAT,
+    DURATION_MS INT,
+    ENERGY FLOAT,
+    INSTRUMENTALNESS FLOAT,
+    LIVENESS FLOAT,
+    LOUDNESS FLOAT,
+    SPEECHINESS FLOAT,
+    TEMPO FLOAT,
+    VALENCE FLOAT,
+    POPULARITY INT,
+    KEY INT
 );
 
--- Table: artists
-CREATE OR REPLACE TABLE artists (
-    mode INT,
-    track_count INT,
-    acousticness FLOAT,
-    artist_name STRING,
-    danceability FLOAT,
-    duration_ms INT,
-    energy FLOAT,
-    instrumentalness FLOAT,
-    liveness FLOAT,
-    loudness FLOAT,
-    speechiness FLOAT,
-    tempo FLOAT,
-    valence FLOAT,
-    popularity INT,
-    key INT
+CREATE OR REPLACE TABLE TRACKS_TABLE (
+    GENRES STRING,
+    ARTISTS STRING,
+    ACOUSTICNESS FLOAT,
+    DANCEABILITY FLOAT,
+    DURATION_MS INT,
+    ENERGY FLOAT,
+    INSTRUMENTALNESS FLOAT,
+    LIVENESS FLOAT,
+    LOUDNESS FLOAT,
+    SPEECHINESS FLOAT,
+    TEMPO FLOAT,
+    VALENCE FLOAT,
+    POPULARITY FLOAT,
+    KEY INT,
+    MODE_COUNT INT,
+    TRACK_COUNT INT
 );
